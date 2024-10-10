@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" style="padding: 5px;">
+        <thead>
+            <td>FirstName</td>
+            <td>LastName</td>
+            <td>Address</td>
+            <td>City</td>
+        </thead>
+    
+    {% for row in rows %}
+    <tr>
+        <td><p>First Name: {{row.FirstName}}</p></td>
+        <td><p>Last Name: {{row.LastName}}</p></td>
+        <td><p>Address: {{row.Address}}</p></td>
+        <td><p>City: {{row.City}}</p></td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

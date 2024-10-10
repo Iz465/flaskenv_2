@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+    background-image: url("download.jpeg");
+    background-size: 1650px 1650px;
+    
+}
+
+h1 {
+    
+    color: rgb(228, 170, 170);
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+.error {
+    color: red;
+}
+
+.flash-message {
+    margin-bottom: 20px;
+}
+
+.flash-message-success {
+    color: green;
+}
+
+.flash-message-error {
+    color: red;
+}

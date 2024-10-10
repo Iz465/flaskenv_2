@@ -9,10 +9,10 @@
     <h2>Contact Form</h2>
 
     {% with messages = get_flashed_messages()%}
-        {% if messages %}
+        {% if messages %} {# This will run if there are any flashes #}
             <ul>
                 {% for mesage in messages %}
-                <li>{{ message }}</li>
+                <p><li>message is: {{message}}</li></p>
                 {% endfor %}
             </ul>
         {% endif %}

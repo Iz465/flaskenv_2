@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Address</td>
+            <td>Phone</td>
+            <td>Email</td>
+            <td>Password</td>
+            
+
+        </thead>
+        {% for row in rows %}
+        <tr>
+            <td>{{row.Name}} </td>
+            <td>{{row.Age}} </td>
+            <td> {{row.Address}} </td>
+            <td>{{row.Phone}} </td>
+            <td>{{row.Email}} </td>
+            <td>{{row.Password}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <div style="height: 5vh;">
+
+    </div>
+   
+            <a href="http://localhost:5000/">Check registered students</a>
+    
+
+
+ 
+</body>
+</html>
